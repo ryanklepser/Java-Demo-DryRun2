@@ -39,7 +39,7 @@ import org.hl7.fhir.r5.model.Parameters;
 import org.hl7.fhir.r5.model.StringType;
 import org.hl7.fhir.r5.model.UriType;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 import java.util.List;
 
 public class BaseJpaResourceProviderCodeSystemR5 extends JpaResourceProviderR5<CodeSystem> {

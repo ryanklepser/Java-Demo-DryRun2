@@ -27,7 +27,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.apache.commons.text.StringTokenizer;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;

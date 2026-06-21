@@ -20,7 +20,7 @@ package ca.uhn.fhir.interceptor.api;
  * #L%
  */
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 import java.util.Collection;
 import java.util.List;
 import java.util.function.Predicate;

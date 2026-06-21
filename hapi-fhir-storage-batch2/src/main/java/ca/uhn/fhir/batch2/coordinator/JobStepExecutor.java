@@ -43,7 +43,7 @@ import org.apache.commons.lang3.Validate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.Optional;
 
 import static ca.uhn.fhir.batch2.maintenance.JobInstanceProcessor.updateInstanceStatus;

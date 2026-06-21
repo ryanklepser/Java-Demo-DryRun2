@@ -26,7 +26,7 @@ import ca.uhn.fhir.context.support.IValidationSupport;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 import java.util.List;
 
 public class NpmJpaValidationSupport implements IValidationSupport {

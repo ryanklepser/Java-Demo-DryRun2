@@ -29,7 +29,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.google.common.hash.HashingInputStream;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.Date;
 
 public class StoredDetails implements IModelJson {

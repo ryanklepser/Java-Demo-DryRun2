@@ -23,7 +23,7 @@ package ca.uhn.fhir.jpa.api.svc;
 import ca.uhn.fhir.interceptor.model.RequestPartitionId;
 import ca.uhn.fhir.rest.api.server.storage.ResourcePersistentId;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 import java.util.Date;
 import java.util.List;
 

@@ -29,7 +29,7 @@ import info.debatty.java.stringsimilarity.NormalizedLevenshtein;
 import info.debatty.java.stringsimilarity.SorensenDice;
 import org.hl7.fhir.instance.model.api.IBase;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 
 public enum MdmSimilarityEnum {
 

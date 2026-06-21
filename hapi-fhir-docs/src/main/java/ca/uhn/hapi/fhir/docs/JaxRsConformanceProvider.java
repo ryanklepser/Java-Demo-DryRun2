@@ -24,11 +24,11 @@ import ca.uhn.fhir.jaxrs.server.AbstractJaxRsConformanceProvider;
 import ca.uhn.fhir.rest.api.Constants;
 import ca.uhn.fhir.rest.server.IResourceProvider;
 
-import javax.ejb.EJB;
-import javax.ejb.Stateless;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
+import jakarta.ejb.EJB;
+import jakarta.ejb.Stateless;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**

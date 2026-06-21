@@ -45,7 +45,7 @@ import org.hl7.fhir.dstu3.model.StringType;
 import org.hl7.fhir.dstu3.model.UriType;
 import org.hl7.fhir.exceptions.FHIRException;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 public class BaseJpaResourceProviderConceptMapDstu3 extends JpaResourceProviderDstu3<ConceptMap> {
 	@Operation(name = JpaConstants.OPERATION_TRANSLATE, idempotent = true, returnParameters = {

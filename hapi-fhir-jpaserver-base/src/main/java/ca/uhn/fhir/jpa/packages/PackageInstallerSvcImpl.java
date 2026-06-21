@@ -64,8 +64,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.support.TransactionTemplate;
 
-import javax.annotation.Nonnull;
-import javax.annotation.PostConstruct;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.PostConstruct;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;

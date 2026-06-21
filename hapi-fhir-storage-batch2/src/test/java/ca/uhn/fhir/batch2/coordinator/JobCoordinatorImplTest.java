@@ -32,7 +32,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.stubbing.Answer;
 import org.springframework.messaging.MessageDeliveryException;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

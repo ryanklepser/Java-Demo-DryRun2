@@ -49,7 +49,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.List;

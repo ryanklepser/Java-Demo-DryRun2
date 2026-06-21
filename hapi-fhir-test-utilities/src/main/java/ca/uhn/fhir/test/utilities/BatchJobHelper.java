@@ -143,12 +143,12 @@ public class BatchJobHelper {
 			));
 	}
 
-	public int getReadCount(Long theJobExecutionId) {
+	public long getReadCount(Long theJobExecutionId) {
 		StepExecution stepExecution = getStepExecution(theJobExecutionId);
 		return stepExecution.getReadCount();
 	}
 
-	public int getWriteCount(Long theJobExecutionId) {
+	public long getWriteCount(Long theJobExecutionId) {
 		StepExecution stepExecution = getStepExecution(theJobExecutionId);
 		return stepExecution.getWriteCount();
 	}

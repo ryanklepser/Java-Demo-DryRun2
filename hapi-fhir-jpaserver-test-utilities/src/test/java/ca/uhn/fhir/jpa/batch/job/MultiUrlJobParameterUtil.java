@@ -7,7 +7,7 @@ import ca.uhn.fhir.jpa.batch.reader.ReverseCronologicalBatchResourcePidReader;
 import ca.uhn.fhir.rest.server.provider.ProviderConstants;
 import org.springframework.batch.core.JobParameters;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.List;
 

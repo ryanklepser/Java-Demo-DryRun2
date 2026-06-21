@@ -35,9 +35,9 @@ import ca.uhn.fhir.rest.server.exceptions.ResourceNotFoundException;
 import org.apache.commons.lang3.Validate;
 import org.springframework.messaging.MessageHandler;
 
-import javax.annotation.Nonnull;
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import java.util.List;
 
 import static org.apache.commons.lang3.StringUtils.isBlank;

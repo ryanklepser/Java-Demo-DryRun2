@@ -35,7 +35,7 @@ import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestClientBuilder;
 import org.elasticsearch.client.RestHighLevelClient;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;

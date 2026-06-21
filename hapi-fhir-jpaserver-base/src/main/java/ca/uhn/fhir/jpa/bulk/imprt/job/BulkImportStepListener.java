@@ -26,11 +26,11 @@ import ca.uhn.fhir.jpa.bulk.imprt.model.BulkImportJobStatusEnum;
 import org.springframework.batch.core.ExitStatus;
 import org.springframework.batch.core.StepExecution;
 import org.springframework.batch.core.StepExecutionListener;
-import org.springframework.batch.core.jsr.RetryListener;
+import org.springframework.retry.RetryListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.retry.ExhaustedRetryException;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 import static org.apache.commons.lang3.StringUtils.isNotBlank;
 

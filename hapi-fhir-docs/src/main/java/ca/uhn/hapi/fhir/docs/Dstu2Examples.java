@@ -26,7 +26,7 @@ import ca.uhn.fhir.rest.client.api.IGenericClient;
 import ca.uhn.fhir.rest.server.IResourceProvider;
 import ca.uhn.fhir.rest.server.RestfulServer;
 
-import javax.servlet.ServletException;
+import jakarta.servlet.ServletException;
 import java.util.Collection;
 
 @SuppressWarnings("serial")

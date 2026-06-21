@@ -3,7 +3,7 @@ package ca.uhn.fhir.jaxrs.server.interceptor;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import javax.ejb.ApplicationException;
+import jakarta.ejb.ApplicationException;
 
 import org.junit.jupiter.api.Test;
 

@@ -26,7 +26,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageHeaders;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 
 public abstract class BaseJsonMessage<T> implements Message<T>, IModelJson {
 

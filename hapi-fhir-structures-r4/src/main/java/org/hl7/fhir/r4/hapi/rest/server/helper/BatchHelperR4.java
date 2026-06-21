@@ -4,7 +4,7 @@ import ca.uhn.fhir.rest.server.provider.ProviderConstants;
 import org.hl7.fhir.r4.model.DecimalType;
 import org.hl7.fhir.r4.model.Parameters;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 public class BatchHelperR4 {
 

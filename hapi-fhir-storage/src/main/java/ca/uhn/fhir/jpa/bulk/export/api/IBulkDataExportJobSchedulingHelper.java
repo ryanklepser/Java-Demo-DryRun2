@@ -20,7 +20,7 @@ package ca.uhn.fhir.jpa.bulk.export.api;
  * #L%
  */
 
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 
 public interface IBulkDataExportJobSchedulingHelper {
 

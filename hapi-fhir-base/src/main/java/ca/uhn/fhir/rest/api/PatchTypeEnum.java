@@ -25,7 +25,7 @@ import ca.uhn.fhir.i18n.Msg;
 import ca.uhn.fhir.rest.annotation.Patch;
 import ca.uhn.fhir.rest.server.exceptions.InvalidRequestException;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.HashMap;
 import java.util.Map;
 

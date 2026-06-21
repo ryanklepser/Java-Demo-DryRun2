@@ -25,7 +25,7 @@ import ca.uhn.fhir.rest.api.server.RequestDetails;
 import ca.uhn.fhir.rest.api.server.bulk.BulkDataExportOptions;
 import org.hl7.fhir.instance.model.api.IIdType;
 
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;

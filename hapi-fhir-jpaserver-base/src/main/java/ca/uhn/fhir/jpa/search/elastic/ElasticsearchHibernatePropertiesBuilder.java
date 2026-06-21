@@ -38,7 +38,7 @@ import org.hibernate.search.backend.elasticsearch.cfg.ElasticsearchIndexSettings
 import org.hibernate.search.mapper.orm.schema.management.SchemaManagementStrategyName;
 import org.slf4j.Logger;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Properties;

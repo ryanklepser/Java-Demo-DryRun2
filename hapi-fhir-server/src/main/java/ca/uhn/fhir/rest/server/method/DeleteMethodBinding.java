@@ -30,7 +30,7 @@ import ca.uhn.fhir.rest.api.RequestTypeEnum;
 import ca.uhn.fhir.rest.api.RestOperationTypeEnum;
 import ca.uhn.fhir.rest.api.server.RequestDetails;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 public class DeleteMethodBinding extends BaseOutcomeReturningMethodBindingWithResourceIdButNoResourceBody {
 

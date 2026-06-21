@@ -52,9 +52,9 @@ import org.hl7.fhir.instance.model.api.IIdType;
 import org.hl7.fhir.instance.model.api.IPrimitiveType;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.annotation.Nonnull;
-import javax.annotation.PostConstruct;
-import javax.transaction.Transactional;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.PostConstruct;
+import jakarta.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

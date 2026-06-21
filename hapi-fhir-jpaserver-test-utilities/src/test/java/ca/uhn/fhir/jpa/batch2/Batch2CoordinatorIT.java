@@ -16,7 +16,7 @@ import ca.uhn.test.concurrency.PointcutLatch;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 import static org.junit.jupiter.api.Assertions.fail;
 

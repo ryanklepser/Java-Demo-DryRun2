@@ -25,7 +25,7 @@ import java.util.List;
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.rest.api.EncodingEnum;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 public interface IValidationContext<T> {
 

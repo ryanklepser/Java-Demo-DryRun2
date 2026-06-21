@@ -20,7 +20,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.List;
 import java.util.stream.Collectors;
 

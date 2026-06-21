@@ -32,7 +32,7 @@ import com.jayway.jsonpath.spi.mapper.GsonMappingProvider;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;

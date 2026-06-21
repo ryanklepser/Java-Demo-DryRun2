@@ -58,7 +58,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 import org.springframework.transaction.support.TransactionTemplate;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -368,7 +368,7 @@ public class TermDeferredStorageSvcImpl implements ITermDeferredStorageSvc {
 	private void deleteTermCodeSystemVersionOffline(Long theCodeSystemVersionPid) {
 		JobParameters jobParameters = new JobParameters(
 			Collections.singletonMap(
-				JOB_PARAM_CODE_SYSTEM_VERSION_ID, new JobParameter(theCodeSystemVersionPid, true)));
+				JOB_PARAM_CODE_SYSTEM_VERSION_ID, new JobParameter(theCodeSystemVersionPid, Long.class)));
 
 		try {
 
@@ -385,7 +385,7 @@ public class TermDeferredStorageSvcImpl implements ITermDeferredStorageSvc {
 	private void deleteTermCodeSystemOffline(Long theCodeSystemPid) {
 		JobParameters jobParameters = new JobParameters(
 			Collections.singletonMap(
-				JOB_PARAM_CODE_SYSTEM_ID, new JobParameter(theCodeSystemPid, true)));
+				JOB_PARAM_CODE_SYSTEM_ID, new JobParameter(theCodeSystemPid, Long.class)));
 
 		try {
 

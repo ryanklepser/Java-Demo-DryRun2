@@ -32,7 +32,7 @@ import org.apache.commons.text.WordUtils;
 import org.hl7.fhir.r5.utils.validation.constants.BestPracticeWarningLevel;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;

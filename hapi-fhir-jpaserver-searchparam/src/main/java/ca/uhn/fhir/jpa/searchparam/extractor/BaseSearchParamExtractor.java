@@ -68,8 +68,8 @@ import org.hl7.fhir.instance.model.api.IPrimitiveType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 
-import javax.annotation.Nonnull;
-import javax.annotation.PostConstruct;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.PostConstruct;
 import javax.measure.quantity.Quantity;
 import javax.measure.unit.NonSI;
 import javax.measure.unit.Unit;

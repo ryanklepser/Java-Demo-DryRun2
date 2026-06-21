@@ -22,8 +22,8 @@ package ca.uhn.fhir.batch2.api;
 
 import ca.uhn.fhir.model.api.IModelJson;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 import java.util.List;
 
 /**

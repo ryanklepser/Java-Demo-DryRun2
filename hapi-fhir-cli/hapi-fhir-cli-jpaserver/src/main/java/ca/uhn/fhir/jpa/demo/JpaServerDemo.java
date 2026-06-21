@@ -52,7 +52,7 @@ import ca.uhn.fhir.rest.server.util.ISearchParamRegistry;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.WebApplicationContext;
 
-import javax.servlet.ServletException;
+import jakarta.servlet.ServletException;
 import java.util.ArrayList;
 import java.util.List;
 

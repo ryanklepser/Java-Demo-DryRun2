@@ -23,7 +23,7 @@ package ca.uhn.fhir.jpa.conformance;
 import ca.uhn.fhir.util.CollectionUtil;
 import org.junit.jupiter.params.provider.Arguments;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;

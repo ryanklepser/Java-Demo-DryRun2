@@ -35,7 +35,7 @@ import org.hl7.fhir.dstu3.model.Observation;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletResponse;
 import java.util.Date;
 
 public class FhirResourceDaoObservationDstu3 extends BaseHapiFhirResourceDaoObservation<Observation> {

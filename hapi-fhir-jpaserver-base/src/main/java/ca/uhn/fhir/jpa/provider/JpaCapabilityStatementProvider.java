@@ -40,7 +40,7 @@ import org.hl7.fhir.r4.model.CapabilityStatement.ConditionalDeleteStatus;
 import org.hl7.fhir.r4.model.CapabilityStatement.ResourceVersionPolicy;
 import org.hl7.fhir.r4.model.Meta;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.Map;
 
 import static org.apache.commons.lang3.StringUtils.isNotBlank;

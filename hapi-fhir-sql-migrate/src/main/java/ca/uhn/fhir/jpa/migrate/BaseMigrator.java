@@ -24,7 +24,7 @@ import ca.uhn.fhir.jpa.migrate.taskdef.BaseTask;
 import org.apache.commons.lang3.Validate;
 import org.flywaydb.core.api.callback.Callback;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import javax.sql.DataSource;
 import java.util.ArrayList;
 import java.util.Collections;

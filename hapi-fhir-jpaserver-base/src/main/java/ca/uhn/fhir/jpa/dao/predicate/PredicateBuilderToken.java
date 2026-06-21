@@ -42,17 +42,17 @@ import ca.uhn.fhir.rest.server.exceptions.InvalidRequestException;
 import ca.uhn.fhir.rest.server.exceptions.MethodNotAllowedException;
 import ca.uhn.fhir.util.FhirVersionIndependentConcept;
 import com.google.common.collect.Sets;
-import org.hibernate.query.criteria.internal.CriteriaBuilderImpl;
-import org.hibernate.query.criteria.internal.predicate.BooleanStaticAssertionPredicate;
+// Hibernate 6: removed internal CriteriaBuilderImpl
+// Hibernate 6: removed BooleanStaticAssertionPredicate
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.Expression;
-import javax.persistence.criteria.From;
-import javax.persistence.criteria.Path;
-import javax.persistence.criteria.Predicate;
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.Expression;
+import jakarta.persistence.criteria.From;
+import jakarta.persistence.criteria.Path;
+import jakarta.persistence.criteria.Predicate;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -228,7 +228,7 @@ class PredicateBuilderToken extends BasePredicateBuilder implements IPredicateBu
 
 		if (codes.isEmpty()) {
 			// This will never match anything
-			return Collections.singletonList(new BooleanStaticAssertionPredicate((CriteriaBuilderImpl) theBuilder, false));
+			return Collections.singletonList(theBuilder.disjunction());
 		}
 
 		List<Predicate> retVal = new ArrayList<>();

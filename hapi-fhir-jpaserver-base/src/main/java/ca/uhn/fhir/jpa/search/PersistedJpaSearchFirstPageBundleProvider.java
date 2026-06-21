@@ -36,7 +36,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.support.TransactionTemplate;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;

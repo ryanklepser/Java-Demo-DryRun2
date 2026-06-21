@@ -29,7 +29,7 @@ import org.hl7.fhir.instance.model.api.IBaseParameters;
 import org.hl7.fhir.instance.model.api.IPrimitiveType;
 import org.springframework.data.domain.Page;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 import java.math.BigDecimal;
 import java.util.List;
 

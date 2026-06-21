@@ -21,6 +21,12 @@
 		<!-- IMPORTANT NOTE: This pom is used by multiple platforms (including Android) so please avoid adding any new
 		 dependencies here. -->
 
+		<!-- Jakarta Annotation API (Nonnull, Nullable, etc.) -->
+		<dependency>
+			<groupId>jakarta.annotation</groupId>
+			<artifactId>jakarta.annotation-api</artifactId>
+		</dependency>
+
 		<!-- JSON -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.datatype</groupId>

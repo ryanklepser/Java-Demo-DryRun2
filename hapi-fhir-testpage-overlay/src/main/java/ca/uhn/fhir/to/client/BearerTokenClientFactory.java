@@ -2,7 +2,7 @@ package ca.uhn.fhir.to.client;
 
 import static org.apache.commons.lang3.StringUtils.isNotBlank;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.rest.client.api.IGenericClient;

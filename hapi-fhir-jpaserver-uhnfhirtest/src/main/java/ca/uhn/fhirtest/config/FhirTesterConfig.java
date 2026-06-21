@@ -1,6 +1,5 @@
 package ca.uhn.fhirtest.config;
 
-import org.springframework.beans.factory.annotation.Autowire;
 import org.springframework.context.annotation.*;
 
 import ca.uhn.fhir.context.FhirVersionEnum;
@@ -98,7 +97,7 @@ public class FhirTesterConfig {
 		return retVal;
 	}
 	
-	@Bean(autowire=Autowire.BY_TYPE)
+	@Bean
 	public SubscriptionPlaygroundController subscriptionPlaygroundController() {
 		return new SubscriptionPlaygroundController();
 	}

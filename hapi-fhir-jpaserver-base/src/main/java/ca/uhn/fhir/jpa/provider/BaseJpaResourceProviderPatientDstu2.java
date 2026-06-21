@@ -56,7 +56,7 @@ public class BaseJpaResourceProviderPatientDstu2 extends JpaResourceProviderDstu
 	@Operation(name = JpaConstants.OPERATION_EVERYTHING, idempotent = true, bundleType=BundleTypeEnum.SEARCHSET)
 	public IBundleProvider patientInstanceEverything(
 
-			javax.servlet.http.HttpServletRequest theServletRequest,
+			jakarta.servlet.http.HttpServletRequest theServletRequest,
 
 			@IdParam 
 			ca.uhn.fhir.model.primitive.IdDt theId,
@@ -105,7 +105,7 @@ public class BaseJpaResourceProviderPatientDstu2 extends JpaResourceProviderDstu
 		@Operation(name = JpaConstants.OPERATION_EVERYTHING, idempotent = true, bundleType=BundleTypeEnum.SEARCHSET)
 		public IBundleProvider patientTypeEverything(
 
-				javax.servlet.http.HttpServletRequest theServletRequest,
+				jakarta.servlet.http.HttpServletRequest theServletRequest,
 
 				@Description(formalDefinition="Results from this method are returned across multiple pages. This parameter controls the size of those pages.") 
 				@OperationParam(name = Constants.PARAM_COUNT) 

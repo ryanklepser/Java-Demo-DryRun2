@@ -17,7 +17,7 @@ import org.hl7.fhir.r4.model.StringType;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.List;
 
 import static ca.uhn.fhir.mdm.api.MdmMatchOutcome.POSSIBLE_MATCH;

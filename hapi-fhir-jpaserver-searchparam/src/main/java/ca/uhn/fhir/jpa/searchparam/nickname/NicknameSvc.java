@@ -23,7 +23,7 @@ package ca.uhn.fhir.jpa.searchparam.nickname;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;

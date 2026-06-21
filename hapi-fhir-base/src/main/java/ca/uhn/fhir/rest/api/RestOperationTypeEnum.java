@@ -24,7 +24,7 @@ package ca.uhn.fhir.rest.api;
 import ca.uhn.fhir.util.CoverageIgnore;
 import org.apache.commons.lang3.Validate;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.HashMap;
 import java.util.Map;
 

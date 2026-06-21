@@ -47,7 +47,7 @@ import org.hl7.fhir.r4.model.InstantType;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Date;

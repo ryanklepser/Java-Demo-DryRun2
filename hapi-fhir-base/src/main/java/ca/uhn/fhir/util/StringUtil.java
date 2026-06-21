@@ -20,7 +20,7 @@ package ca.uhn.fhir.util;
  * #L%
  */
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.io.CharArrayWriter;
 import java.nio.charset.StandardCharsets;
 import java.text.Normalizer;

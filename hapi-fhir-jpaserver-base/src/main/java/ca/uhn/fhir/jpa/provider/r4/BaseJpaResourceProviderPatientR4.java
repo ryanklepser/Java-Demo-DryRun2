@@ -30,7 +30,7 @@ import org.hl7.fhir.r4.model.StringType;
 import org.hl7.fhir.r4.model.UnsignedIntType;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -69,7 +69,7 @@ public class BaseJpaResourceProviderPatientR4 extends JpaResourceProviderR4<Pati
 	@Operation(name = JpaConstants.OPERATION_EVERYTHING, idempotent = true, bundleType = BundleTypeEnum.SEARCHSET)
 	public IBundleProvider patientInstanceEverything(
 
-		javax.servlet.http.HttpServletRequest theServletRequest,
+		jakarta.servlet.http.HttpServletRequest theServletRequest,
 
 		@IdParam
 			IdType theId,
@@ -118,7 +118,7 @@ public class BaseJpaResourceProviderPatientR4 extends JpaResourceProviderR4<Pati
 	@Operation(name = JpaConstants.OPERATION_EVERYTHING, idempotent = true, bundleType = BundleTypeEnum.SEARCHSET)
 	public IBundleProvider patientTypeEverything(
 
-		javax.servlet.http.HttpServletRequest theServletRequest,
+		jakarta.servlet.http.HttpServletRequest theServletRequest,
 
 		@Description(formalDefinition = "Results from this method are returned across multiple pages. This parameter controls the size of those pages.")
 		@OperationParam(name = Constants.PARAM_COUNT)
@@ -173,7 +173,7 @@ public class BaseJpaResourceProviderPatientR4 extends JpaResourceProviderR4<Pati
 		@OperationParam(name = "MemberIdentifier", typeName = "string")
 	})
 	public Parameters patientMemberMatch(
-		javax.servlet.http.HttpServletRequest theServletRequest,
+		jakarta.servlet.http.HttpServletRequest theServletRequest,
 
 		@Description(shortDefinition = "The target of the operation. Will be returned with Identifier for matched coverage added.")
 		@OperationParam(name = Constants.PARAM_MEMBER_PATIENT, min = 1, max = 1)

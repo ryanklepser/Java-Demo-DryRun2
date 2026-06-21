@@ -26,7 +26,7 @@ import net.ttddyy.dsproxy.listener.MethodExecutionContext;
 import net.ttddyy.dsproxy.proxy.ParameterSetOperation;
 import net.ttddyy.dsproxy.support.ProxyDataSourceBuilder;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 import java.util.Collections;
 import java.util.List;
 import java.util.Queue;

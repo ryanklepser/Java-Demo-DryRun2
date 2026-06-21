@@ -27,8 +27,8 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.hl7.fhir.r4.model.Enumerations.ConceptMapEquivalence;
 
-import javax.annotation.Nonnull;
-import javax.persistence.*;
+import jakarta.annotation.Nonnull;
+import jakarta.persistence.*;
 import java.io.Serializable;
 
 import static org.apache.commons.lang3.StringUtils.length;

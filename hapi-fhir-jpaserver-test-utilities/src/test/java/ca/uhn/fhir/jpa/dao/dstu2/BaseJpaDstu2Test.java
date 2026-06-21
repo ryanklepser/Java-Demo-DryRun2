@@ -71,7 +71,7 @@ import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionTemplate;
 
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
 
 import static org.junit.jupiter.api.Assertions.fail;
 

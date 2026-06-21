@@ -91,11 +91,11 @@ public class CronologicalBatchAllResourcePidReader implements ItemReader<List<Lo
 	}
 
 	public static JobParameters buildJobParameters(Integer theBatchSize, RequestPartitionId theRequestPartitionId) {
-		Map<String, JobParameter> map = new HashMap<>();
-		map.put(CronologicalBatchAllResourcePidReader.JOB_PARAM_REQUEST_PARTITION, new JobParameter(theRequestPartitionId.toJson()));
-		map.put(CronologicalBatchAllResourcePidReader.JOB_PARAM_START_TIME, new JobParameter(DateUtils.addMinutes(new Date(), CommonBatchJobConfig.MINUTES_IN_FUTURE_TO_PROCESS_FROM)));
+		Map<String, JobParameter<?>> map = new HashMap<>();
+		map.put(CronologicalBatchAllResourcePidReader.JOB_PARAM_REQUEST_PARTITION, new JobParameter<>(theRequestPartitionId.toJson(), String.class));
+		map.put(CronologicalBatchAllResourcePidReader.JOB_PARAM_START_TIME, new JobParameter<>(DateUtils.addMinutes(new Date(), CommonBatchJobConfig.MINUTES_IN_FUTURE_TO_PROCESS_FROM), Date.class));
 		if (theBatchSize != null) {
-			map.put(CronologicalBatchAllResourcePidReader.JOB_PARAM_BATCH_SIZE, new JobParameter(theBatchSize.longValue()));
+			map.put(CronologicalBatchAllResourcePidReader.JOB_PARAM_BATCH_SIZE, new JobParameter<>(theBatchSize.longValue(), Long.class));
 		}
 		JobParameters parameters = new JobParameters(map);
 		return parameters;

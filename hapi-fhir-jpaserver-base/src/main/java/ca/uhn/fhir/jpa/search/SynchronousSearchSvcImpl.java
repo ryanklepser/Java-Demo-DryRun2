@@ -32,7 +32,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.support.TransactionTemplate;
 
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;

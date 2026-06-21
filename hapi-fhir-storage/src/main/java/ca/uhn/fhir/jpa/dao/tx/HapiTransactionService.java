@@ -44,8 +44,8 @@ import org.springframework.transaction.support.TransactionCallback;
 import org.springframework.transaction.support.TransactionCallbackWithoutResult;
 import org.springframework.transaction.support.TransactionTemplate;
 
-import javax.annotation.Nullable;
-import javax.annotation.PostConstruct;
+import jakarta.annotation.Nullable;
+import jakarta.annotation.PostConstruct;
 
 public class HapiTransactionService {
 

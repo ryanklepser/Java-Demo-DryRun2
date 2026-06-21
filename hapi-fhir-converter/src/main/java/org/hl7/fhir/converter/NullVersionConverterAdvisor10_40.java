@@ -27,8 +27,8 @@ import org.hl7.fhir.r4.model.CodeSystem;
 import org.hl7.fhir.r4.model.ValueSet;
 import org.hl7.fhir.r5.model.FhirPublication;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 public class NullVersionConverterAdvisor10_40 extends BaseAdvisor_10_40 {
 

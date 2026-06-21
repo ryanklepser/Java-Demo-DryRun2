@@ -23,7 +23,7 @@ package ca.uhn.fhir.jpa.validation;
 import org.hl7.fhir.r5.utils.validation.constants.ReferenceValidationPolicy;
 import org.thymeleaf.util.Validate;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 public class ValidationSettings {
 

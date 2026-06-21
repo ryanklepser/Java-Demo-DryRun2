@@ -30,8 +30,8 @@ import org.hl7.fhir.dstu3.model.Bundle;
 import org.hl7.fhir.dstu3.model.Meta;
 import org.hl7.fhir.instance.model.api.IBaseBundle;
 
-import javax.annotation.PostConstruct;
-import javax.persistence.TypedQuery;
+import jakarta.annotation.PostConstruct;
+import jakarta.persistence.TypedQuery;
 import java.util.Collection;
 import java.util.List;
 

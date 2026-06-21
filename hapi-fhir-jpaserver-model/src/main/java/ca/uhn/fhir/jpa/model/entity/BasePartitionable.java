@@ -23,10 +23,10 @@ package ca.uhn.fhir.jpa.model.entity;
 import ca.uhn.fhir.interceptor.model.RequestPartitionId;
 import org.slf4j.Logger;
 
-import javax.annotation.Nullable;
-import javax.persistence.Column;
-import javax.persistence.Embedded;
-import javax.persistence.MappedSuperclass;
+import jakarta.annotation.Nullable;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embedded;
+import jakarta.persistence.MappedSuperclass;
 import java.io.Serializable;
 
 import static org.slf4j.LoggerFactory.getLogger;

@@ -97,8 +97,8 @@
 			<version>${jaxb_api_version}</version>
 			<exclusions>
 				<exclusion>
-					<groupId>javax.activation</groupId>
-					<artifactId>javax.activation-api</artifactId>
+					<groupId>jakarta.activation</groupId>
+					<artifactId>jakarta.activation-api</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
@@ -139,7 +139,7 @@
 			<exclusions>
 				<exclusion>
 					<groupId>com.sun.activation</groupId>
-					<artifactId>javax.activation</artifactId>
+					<artifactId>jakarta.activation</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>

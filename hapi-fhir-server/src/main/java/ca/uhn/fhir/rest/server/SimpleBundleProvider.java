@@ -25,7 +25,7 @@ import ca.uhn.fhir.rest.api.server.IBundleProvider;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.hl7.fhir.instance.model.api.IPrimitiveType;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;

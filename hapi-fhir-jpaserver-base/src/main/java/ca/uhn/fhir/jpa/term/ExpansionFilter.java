@@ -25,8 +25,8 @@ import ca.uhn.fhir.util.FhirVersionIndependentConcept;
 import org.apache.commons.lang3.Validate;
 import org.hl7.fhir.r4.model.ValueSet;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 import java.util.Collections;
 import java.util.List;
 

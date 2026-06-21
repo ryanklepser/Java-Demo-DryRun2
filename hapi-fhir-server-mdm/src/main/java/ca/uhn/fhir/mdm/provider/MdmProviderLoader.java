@@ -30,7 +30,7 @@ import ca.uhn.fhir.rest.server.provider.ResourceProviderFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PreDestroy;
+import jakarta.annotation.PreDestroy;
 
 @Service
 public class MdmProviderLoader {

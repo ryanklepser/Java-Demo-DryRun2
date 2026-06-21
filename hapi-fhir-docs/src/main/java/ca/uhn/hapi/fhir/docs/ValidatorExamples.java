@@ -56,8 +56,8 @@ import org.hl7.fhir.r4.model.StringType;
 import org.hl7.fhir.r4.model.StructureDefinition;
 import org.hl7.fhir.r4.model.ValueSet;
 
-import javax.annotation.Nonnull;
-import javax.servlet.ServletException;
+import jakarta.annotation.Nonnull;
+import jakarta.servlet.ServletException;
 import java.io.File;
 import java.io.FileReader;
 import java.util.List;

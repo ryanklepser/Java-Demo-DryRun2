@@ -20,18 +20,15 @@ package ca.uhn.fhir.jpa.model.dialect;
  * #L%
  */
 
-import org.hibernate.dialect.PostgreSQL94Dialect;
-
-import java.sql.Types;
+import org.hibernate.dialect.PostgreSQLDialect;
 
 /**
  * This dialect is recommended when using HAPI FHIR JPA on Postgresql database.
  */
-public class HapiFhirPostgres94Dialect extends PostgreSQL94Dialect {
+public class HapiFhirPostgres94Dialect extends PostgreSQLDialect {
 
 	public HapiFhirPostgres94Dialect() {
 		super();
-		registerColumnType( Types.CLOB, "oid" );
 	}
 
 }

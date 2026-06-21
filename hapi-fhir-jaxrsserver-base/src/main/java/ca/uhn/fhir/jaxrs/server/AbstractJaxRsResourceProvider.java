@@ -23,10 +23,10 @@ package ca.uhn.fhir.jaxrs.server;
 import java.io.IOException;
 import java.net.URL;
 
-import javax.interceptor.Interceptors;
-import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
+import jakarta.interceptor.Interceptors;
+import jakarta.ws.rs.*;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
 
 import org.hl7.fhir.instance.model.api.IBaseResource;
 

@@ -16,7 +16,7 @@ import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.servlet.ServletException;
+import jakarta.servlet.ServletException;
 
 import java.util.List;
 

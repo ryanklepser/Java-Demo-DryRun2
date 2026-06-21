@@ -4,11 +4,11 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
-import javax.ejb.Stateless;
-import javax.interceptor.Interceptors;
-import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
+import jakarta.ejb.Stateless;
+import jakarta.interceptor.Interceptors;
+import jakarta.ws.rs.*;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
 
 import ca.uhn.fhir.rest.api.server.IBundleProvider;
 import ca.uhn.fhir.rest.api.server.RequestDetails;

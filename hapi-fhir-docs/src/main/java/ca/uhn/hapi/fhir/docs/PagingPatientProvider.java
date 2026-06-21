@@ -29,7 +29,7 @@ import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.hl7.fhir.r4.model.InstantType;
 import org.hl7.fhir.r4.model.Patient;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.List;
 
 @SuppressWarnings("null")

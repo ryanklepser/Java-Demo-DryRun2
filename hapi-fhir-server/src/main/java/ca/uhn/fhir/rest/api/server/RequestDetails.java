@@ -14,8 +14,8 @@ import org.apache.commons.lang3.Validate;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.hl7.fhir.instance.model.api.IIdType;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Reader;
@@ -324,7 +324,7 @@ public abstract class RequestDetails {
 	 * @throws UnsupportedEncodingException if the character set encoding used is not supported and the text cannot be decoded
 	 * @throws IllegalStateException        if {@link #getInputStream} method has been called on this request
 	 * @throws IOException                  if an input or output exception occurred
-	 * @see javax.servlet.http.HttpServletRequest#getInputStream
+	 * @see jakarta.servlet.http.HttpServletRequest#getInputStream
 	 */
 	public abstract Reader getReader() throws IOException;
 
@@ -444,7 +444,7 @@ public abstract class RequestDetails {
 	 * A new map is created for each individual request that is handled by the server,
 	 * so this map can be used (for example) to pass authorization details from an interceptor
 	 * to the resource providers, or from an interceptor's {@link IServerInterceptor#incomingRequestPreHandled(RestOperationTypeEnum, ca.uhn.fhir.rest.server.interceptor.IServerInterceptor.ActionRequestDetails)}
-	 * method to the {@link IServerInterceptor#outgoingResponse(RequestDetails, org.hl7.fhir.instance.model.api.IBaseResource, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)}
+	 * method to the {@link IServerInterceptor#outgoingResponse(RequestDetails, org.hl7.fhir.instance.model.api.IBaseResource, jakarta.servlet.http.HttpServletRequest, jakarta.servlet.http.HttpServletResponse)}
 	 * method.
 	 * </p>
 	 */

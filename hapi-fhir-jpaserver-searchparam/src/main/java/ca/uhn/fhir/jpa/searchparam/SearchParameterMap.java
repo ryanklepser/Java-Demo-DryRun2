@@ -25,7 +25,7 @@ import org.apache.commons.lang3.builder.CompareToBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;

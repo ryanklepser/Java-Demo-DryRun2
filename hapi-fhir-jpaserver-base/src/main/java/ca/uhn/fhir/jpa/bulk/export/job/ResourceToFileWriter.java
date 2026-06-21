@@ -29,7 +29,7 @@ import org.hl7.fhir.instance.model.api.IBaseBinary;
 import org.hl7.fhir.instance.model.api.IIdType;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 import java.util.Optional;
 
 public class ResourceToFileWriter extends BaseResourceToFileWriter {

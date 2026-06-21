@@ -20,7 +20,7 @@ package ca.uhn.fhir.rest.server.util;
  * #L%
  */
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.rest.client.api.IGenericClient;

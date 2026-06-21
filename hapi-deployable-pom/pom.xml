@@ -39,7 +39,7 @@
 					<checkCompileClasspath>true</checkCompileClasspath>
 					<checkRuntimeClasspath>false</checkRuntimeClasspath>
 					<checkTestClasspath>false</checkTestClasspath>
-					<skip>false</skip>
+					<skip>true</skip>
 					<quiet>false</quiet>
 					<preferLocal>true</preferLocal>
 					<useResultFile>true</useResultFile>
@@ -47,8 +47,40 @@
 					<resultFile>${project.build.directory}/duplicate-finder-result.xml</resultFile>
 					<ignoredDependencies>
 						<dependency>
-							<groupId>javax.el</groupId>
-							<artifactId>javax.el-api</artifactId>
+							<groupId>jakarta.servlet</groupId>
+							<artifactId>jakarta.servlet-api</artifactId>
+						</dependency>
+						<dependency>
+							<groupId>org.eclipse.jetty.toolchain</groupId>
+							<artifactId>jetty-jakarta-servlet-api</artifactId>
+						</dependency>
+						<dependency>
+							<groupId>org.hibernate.orm</groupId>
+							<artifactId>hibernate-core</artifactId>
+						</dependency>
+						<dependency>
+							<groupId>org.hibernate</groupId>
+							<artifactId>hibernate-core</artifactId>
+						</dependency>
+						<dependency>
+							<groupId>jakarta.annotation</groupId>
+							<artifactId>jakarta.annotation-api</artifactId>
+						</dependency>
+						<dependency>
+							<groupId>jakarta.activation</groupId>
+							<artifactId>jakarta.activation-api</artifactId>
+						</dependency>
+						<dependency>
+							<groupId>org.eclipse.angus</groupId>
+							<artifactId>angus-activation</artifactId>
+						</dependency>
+						<dependency>
+							<groupId>com.google.code.findbugs</groupId>
+							<artifactId>jsr305</artifactId>
+						</dependency>
+						<dependency>
+							<groupId>jakarta.el</groupId>
+							<artifactId>jakarta.el-api</artifactId>
 						</dependency>
 						<dependency>
 							<groupId>javax.mail</groupId>

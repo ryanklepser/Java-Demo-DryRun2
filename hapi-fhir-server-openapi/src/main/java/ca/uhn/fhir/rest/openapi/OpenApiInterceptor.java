@@ -81,6 +81,8 @@ import org.thymeleaf.cache.AlwaysValidCacheEntryValidity;
 import org.thymeleaf.cache.ICacheEntryValidity;
 import org.thymeleaf.context.IExpressionContext;
 import org.thymeleaf.context.WebContext;
+import org.thymeleaf.web.servlet.JakartaServletWebApplication;
+import org.thymeleaf.web.IWebExchange;
 import org.thymeleaf.linkbuilder.AbstractLinkBuilder;
 import org.thymeleaf.standard.StandardDialect;
 import org.thymeleaf.templatemode.TemplateMode;
@@ -88,9 +90,9 @@ import org.thymeleaf.templateresolver.ITemplateResolver;
 import org.thymeleaf.templateresolver.TemplateResolution;
 import org.thymeleaf.templateresource.ClassLoaderTemplateResource;
 
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
 import java.math.BigDecimal;
@@ -290,7 +292,9 @@ public class OpenApiInterceptor {
 
 		HttpServletRequest servletRequest = theRequestDetails.getServletRequest();
 		ServletContext servletContext = servletRequest.getServletContext();
-		WebContext context = new WebContext(servletRequest, theResponse, servletContext);
+		JakartaServletWebApplication webApp = JakartaServletWebApplication.buildApplication(servletContext);
+		IWebExchange webExchange = webApp.buildExchange(servletRequest, theResponse);
+		WebContext context = new WebContext(webExchange);
 		context.setVariable(REQUEST_DETAILS, theRequestDetails);
 		context.setVariable("DESCRIPTION", cs.getImplementation().getDescription());
 		context.setVariable("SERVER_NAME", cs.getSoftware().getName());

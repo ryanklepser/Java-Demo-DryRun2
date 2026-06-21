@@ -26,7 +26,7 @@ import ca.uhn.fhir.batch2.model.WorkChunk;
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;

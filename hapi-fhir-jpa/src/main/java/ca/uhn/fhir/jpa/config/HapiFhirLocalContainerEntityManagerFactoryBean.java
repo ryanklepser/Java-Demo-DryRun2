@@ -21,7 +21,6 @@ package ca.uhn.fhir.jpa.config;
  */
 
 import org.hibernate.cfg.AvailableSettings;
-import org.hibernate.query.criteria.LiteralHandlingMode;
 import org.hibernate.resource.jdbc.spi.PhysicalConnectionHandlingMode;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.orm.hibernate5.SpringBeanContainer;
@@ -45,10 +44,6 @@ public class HapiFhirLocalContainerEntityManagerFactoryBean extends LocalContain
 	@Override
 	public Map<String, Object> getJpaPropertyMap() {
 		Map<String, Object> retVal = super.getJpaPropertyMap();
-
-		if (!retVal.containsKey(AvailableSettings.CRITERIA_LITERAL_HANDLING_MODE)) {
-			retVal.put(AvailableSettings.CRITERIA_LITERAL_HANDLING_MODE, LiteralHandlingMode.BIND);
-		}
 
 		if (!retVal.containsKey(AvailableSettings.CONNECTION_HANDLING)) {
 			retVal.put(AvailableSettings.CONNECTION_HANDLING, PhysicalConnectionHandlingMode.DELAYED_ACQUISITION_AND_HOLD);

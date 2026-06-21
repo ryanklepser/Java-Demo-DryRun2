@@ -33,7 +33,7 @@ import org.slf4j.LoggerFactory;
 
 import ca.uhn.fhir.util.ClasspathUtil;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 
 /**
  * It's a wrapper of UcumEssenceService

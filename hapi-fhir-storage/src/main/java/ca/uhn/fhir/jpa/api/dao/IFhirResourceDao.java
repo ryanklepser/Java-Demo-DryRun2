@@ -47,9 +47,9 @@ import org.hl7.fhir.instance.model.api.IBaseParameters;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.hl7.fhir.instance.model.api.IIdType;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
+import jakarta.servlet.http.HttpServletResponse;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;

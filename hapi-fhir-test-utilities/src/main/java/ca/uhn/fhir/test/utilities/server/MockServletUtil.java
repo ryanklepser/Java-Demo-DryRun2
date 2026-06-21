@@ -20,7 +20,7 @@ package ca.uhn.fhir.test.utilities.server;
  * #L%
  */
 
-import javax.servlet.ServletConfig;
+import jakarta.servlet.ServletConfig;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;

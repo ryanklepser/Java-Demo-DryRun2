@@ -33,8 +33,8 @@ import org.hl7.fhir.r4.model.CapabilityStatement;
 import org.hl7.fhir.r4.model.Enumerations;
 import org.springframework.web.cors.CorsConfiguration;
 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import java.util.Arrays;
 
 @SuppressWarnings({"serial", "RedundantThrows", "InnerClassMayBeStatic"})
