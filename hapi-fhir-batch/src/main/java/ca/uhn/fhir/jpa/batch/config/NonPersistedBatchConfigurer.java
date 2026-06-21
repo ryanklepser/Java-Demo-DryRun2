@@ -33,6 +33,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.task.TaskExecutor;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.sql.DataSource;
@@ -57,10 +58,15 @@ public class NonPersistedBatchConfigurer {
 	}
 
 	@Bean
+	public PlatformTransactionManager batchTransactionManager() {
+		return new DataSourceTransactionManager(batchDataSource());
+	}
+
+	@Bean
 	public JobRepository jobRepository() throws Exception {
 		JobRepositoryFactoryBean factory = new JobRepositoryFactoryBean();
 		factory.setDataSource(batchDataSource());
-		factory.setTransactionManager(myHapiPlatformTransactionManager);
+		factory.setTransactionManager(batchTransactionManager());
 		factory.afterPropertiesSet();
 		return factory.getObject();
 	}
@@ -69,6 +75,7 @@ public class NonPersistedBatchConfigurer {
 	public JobExplorer jobExplorer() throws Exception {
 		JobExplorerFactoryBean factory = new JobExplorerFactoryBean();
 		factory.setDataSource(batchDataSource());
+		factory.setTransactionManager(batchTransactionManager());
 		factory.afterPropertiesSet();
 		return factory.getObject();
 	}

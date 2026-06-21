@@ -7,7 +7,6 @@ import jakarta.annotation.PostConstruct;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import ca.uhn.fhir.context.FhirVersionEnum;
 import ca.uhn.fhir.rest.server.util.ITestingUiClientFactory;
@@ -90,7 +89,6 @@ public class TesterConfig {
 		myRefuseToFetchThirdPartyUrls = theRefuseToFetchThirdPartyUrls;
 	}
 
-	@Autowired
 	public void setServers(List<String> theServers) {
 		List<String> servers = theServers;
 
