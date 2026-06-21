@@ -29,7 +29,7 @@ import ca.uhn.fhir.rest.server.exceptions.InternalErrorException;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hl7.fhir.instance.model.api.IBase;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 /**
  * Contains all business data for determining if a match exists on a particular field, given:

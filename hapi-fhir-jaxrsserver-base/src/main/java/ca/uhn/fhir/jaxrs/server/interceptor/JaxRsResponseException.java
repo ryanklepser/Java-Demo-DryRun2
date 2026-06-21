@@ -20,7 +20,7 @@ package ca.uhn.fhir.jaxrs.server.interceptor;
  * #L%
  */
 
-import javax.ejb.ApplicationException;
+import jakarta.ejb.ApplicationException;
 
 import ca.uhn.fhir.rest.server.exceptions.BaseServerResponseException;
 

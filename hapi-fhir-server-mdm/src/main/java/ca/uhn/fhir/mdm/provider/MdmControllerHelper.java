@@ -48,7 +48,7 @@ import org.hl7.fhir.instance.model.api.IIdType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.math.BigDecimal;
 import java.util.Comparator;
 import java.util.Date;

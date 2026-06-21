@@ -22,10 +22,10 @@ package ca.uhn.fhir.jaxrs.server.interceptor;
 
 import java.io.IOException;
 
-import javax.interceptor.AroundInvoke;
-import javax.interceptor.InvocationContext;
-import javax.servlet.ServletException;
-import javax.ws.rs.core.Response;
+import jakarta.interceptor.AroundInvoke;
+import jakarta.interceptor.InvocationContext;
+import jakarta.servlet.ServletException;
+import jakarta.ws.rs.core.Response;
 
 import ca.uhn.fhir.jaxrs.server.AbstractJaxRsProvider;
 import ca.uhn.fhir.jaxrs.server.util.JaxRsRequest;

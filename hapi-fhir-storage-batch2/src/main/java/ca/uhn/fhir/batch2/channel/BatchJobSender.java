@@ -26,7 +26,7 @@ import ca.uhn.fhir.jpa.subscription.channel.api.IChannelProducer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 public class BatchJobSender {
 	private static final Logger ourLog = LoggerFactory.getLogger(BatchJobSender.class);

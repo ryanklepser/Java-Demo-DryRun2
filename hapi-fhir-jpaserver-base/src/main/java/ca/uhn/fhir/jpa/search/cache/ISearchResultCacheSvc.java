@@ -23,7 +23,7 @@ package ca.uhn.fhir.jpa.search.cache;
 import ca.uhn.fhir.rest.api.server.storage.ResourcePersistentId;
 import ca.uhn.fhir.jpa.entity.Search;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 import java.util.List;
 
 public interface ISearchResultCacheSvc {

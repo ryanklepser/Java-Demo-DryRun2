@@ -22,8 +22,8 @@ package ca.uhn.fhir.util;
 
 import ca.uhn.fhir.rest.param.DateRangeParam;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 import java.util.Date;
 
 public class DateRangeUtil {

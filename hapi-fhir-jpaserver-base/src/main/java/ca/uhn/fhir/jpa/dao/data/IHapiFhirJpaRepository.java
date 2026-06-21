@@ -20,7 +20,7 @@ package ca.uhn.fhir.jpa.dao.data;
  * #L%
  */
 
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 
 @Transactional(Transactional.TxType.MANDATORY)
 public interface IHapiFhirJpaRepository {

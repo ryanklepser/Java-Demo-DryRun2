@@ -155,21 +155,21 @@ import org.springframework.transaction.support.TransactionTemplate;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.comparator.Comparators;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-import javax.annotation.PostConstruct;
-import javax.persistence.EntityManager;
-import javax.persistence.NonUniqueResultException;
-import javax.persistence.PersistenceContext;
-import javax.persistence.PersistenceContextType;
-import javax.persistence.TypedQuery;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Fetch;
-import javax.persistence.criteria.Join;
-import javax.persistence.criteria.JoinType;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
+import jakarta.annotation.PostConstruct;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.NonUniqueResultException;
+import jakarta.persistence.PersistenceContext;
+import jakarta.persistence.PersistenceContextType;
+import jakarta.persistence.TypedQuery;
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Fetch;
+import jakarta.persistence.criteria.Join;
+import jakarta.persistence.criteria.JoinType;
+import jakarta.persistence.criteria.Predicate;
+import jakarta.persistence.criteria.Root;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -908,7 +908,7 @@ public abstract class BaseTermReadSvcImpl implements ITermReadSvc {
 			csv = myCodeSystemVersionDao.findByCodeSystemPidAndVersion(theCs.getPid(), includeOrExcludeVersion);
 		}
 
-		SearchSession searchSession = Search.session(myEntityManager);
+		SearchSession searchSession = Search.session(myEntityManager.unwrap(org.hibernate.Session.class));
 		/*
 		 * If FullText searching is not enabled, we can handle only basic expansions
 		 * since we're going to do it without the database.
@@ -2190,7 +2190,7 @@ public abstract class BaseTermReadSvcImpl implements ITermReadSvc {
 		TermConcept codeB = findCode(codeBSystemIdentifier, conceptB.getCode())
 			.orElseThrow(() -> new InvalidRequestException("Unknown code: " + conceptB));
 
-		SearchSession searchSession = Search.session(myEntityManager);
+		SearchSession searchSession = Search.session(myEntityManager.unwrap(org.hibernate.Session.class));
 
 		ConceptSubsumptionOutcome subsumes;
 		subsumes = testForSubsumption(searchSession, codeA, codeB, ConceptSubsumptionOutcome.SUBSUMES);
@@ -2737,7 +2737,7 @@ public abstract class BaseTermReadSvcImpl implements ITermReadSvc {
 
 	@VisibleForTesting
 	SearchSession getSearchSession() {
-		return Search.session( myEntityManager );
+		return Search.session(myEntityManager.unwrap(org.hibernate.Session.class));
 	}
 
 

@@ -59,9 +59,9 @@ import org.hl7.fhir.instance.model.api.IBaseParameters;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.hl7.fhir.instance.model.api.IIdType;
 import org.hl7.fhir.instance.model.api.IPrimitiveType;
-import org.springframework.beans.factory.annotation.Required;
+import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 import java.util.Date;
 
 import static ca.uhn.fhir.jpa.model.util.JpaConstants.OPERATION_META_ADD;
@@ -101,7 +101,7 @@ public abstract class BaseJpaResourceProvider<T extends IBaseResource> extends B
 		return myDao;
 	}
 
-	@Required
+	@Autowired
 	public void setDao(IFhirResourceDao<T> theDao) {
 		myDao = theDao;
 	}

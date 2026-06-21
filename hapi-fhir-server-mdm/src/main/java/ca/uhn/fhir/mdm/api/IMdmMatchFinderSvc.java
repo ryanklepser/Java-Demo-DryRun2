@@ -23,7 +23,7 @@ package ca.uhn.fhir.mdm.api;
 import ca.uhn.fhir.interceptor.model.RequestPartitionId;
 import org.hl7.fhir.instance.model.api.IAnyResource;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.List;
 
 public interface IMdmMatchFinderSvc {

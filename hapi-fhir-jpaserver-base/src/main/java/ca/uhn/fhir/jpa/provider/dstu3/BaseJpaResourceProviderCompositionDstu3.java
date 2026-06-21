@@ -54,7 +54,7 @@ public class BaseJpaResourceProviderCompositionDstu3 extends JpaResourceProvider
 	@Operation(name = JpaConstants.OPERATION_DOCUMENT, idempotent = true, bundleType=BundleTypeEnum.DOCUMENT)
 	public IBundleProvider getDocumentForComposition(
 
-			javax.servlet.http.HttpServletRequest theServletRequest,
+			jakarta.servlet.http.HttpServletRequest theServletRequest,
 
 			@IdParam 
 			IdType theId,

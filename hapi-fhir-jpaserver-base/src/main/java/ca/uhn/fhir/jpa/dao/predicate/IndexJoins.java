@@ -22,7 +22,7 @@ package ca.uhn.fhir.jpa.dao.predicate;
 
 import com.google.common.collect.Maps;
 
-import javax.persistence.criteria.Join;
+import jakarta.persistence.criteria.Join;
 import java.util.Map;
 
 public class IndexJoins {

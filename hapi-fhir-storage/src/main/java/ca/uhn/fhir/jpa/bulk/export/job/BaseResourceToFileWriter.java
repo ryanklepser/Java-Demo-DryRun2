@@ -35,6 +35,7 @@ import org.hl7.fhir.instance.model.api.IBaseBinary;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.hl7.fhir.instance.model.api.IIdType;
 import org.slf4j.Logger;
+import org.springframework.batch.item.Chunk;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.beans.factory.annotation.Value;
 
@@ -80,7 +81,7 @@ public abstract class BaseResourceToFileWriter implements ItemWriter<List<IBaseR
 	}
 
 	@Override
-	public void write(List<? extends List<IBaseResource>> theList) throws Exception {
+	public void write(Chunk<? extends List<IBaseResource>> theList) throws Exception {
 
 		int count = 0;
 		for (List<IBaseResource> resourceList : theList) {

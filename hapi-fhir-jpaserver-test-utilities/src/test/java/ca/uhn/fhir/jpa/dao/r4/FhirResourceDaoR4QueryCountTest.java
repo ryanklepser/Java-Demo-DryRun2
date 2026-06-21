@@ -53,7 +53,7 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Slice;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.io.IOException;
 import java.util.Date;
 import java.util.List;

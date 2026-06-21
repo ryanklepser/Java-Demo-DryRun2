@@ -18,9 +18,9 @@ import org.hl7.fhir.instance.model.api.IPrimitiveType;
 import org.hl7.fhir.r4.model.CodeSystem;
 import org.hl7.fhir.r4.model.ValueSet;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-import javax.transaction.Transactional;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
+import jakarta.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;

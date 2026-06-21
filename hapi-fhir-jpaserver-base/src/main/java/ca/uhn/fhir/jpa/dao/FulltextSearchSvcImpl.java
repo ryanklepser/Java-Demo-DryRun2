@@ -60,10 +60,10 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionTemplate;
 
-import javax.annotation.Nonnull;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.PersistenceContextType;
+import jakarta.annotation.Nonnull;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
+import jakarta.persistence.PersistenceContextType;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -219,7 +219,7 @@ public class FulltextSearchSvcImpl implements IFulltextSearchSvc {
 
 	@Nonnull
 	private SearchSession getSearchSession() {
-		return Search.session(myEntityManager);
+		return Search.session(myEntityManager.unwrap(org.hibernate.Session.class));
 	}
 
 	private List<ResourcePersistentId> convertLongsToResourcePersistentIds(List<Long> theLongPids) {

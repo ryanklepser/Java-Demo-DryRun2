@@ -24,7 +24,7 @@ import ca.uhn.fhir.jpa.search.reindex.BlockPolicy;
 import org.apache.commons.lang3.Validate;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 public final class ThreadPoolUtil {
 	private ThreadPoolUtil() {

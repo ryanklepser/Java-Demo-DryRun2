@@ -2,7 +2,7 @@ package ca.uhn.fhir.to.model;
 
 import static org.apache.commons.lang3.StringUtils.*;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.springframework.web.bind.annotation.ModelAttribute;
 

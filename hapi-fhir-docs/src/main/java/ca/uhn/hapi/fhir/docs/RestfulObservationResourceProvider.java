@@ -81,7 +81,7 @@ public class RestfulObservationResourceProvider implements IResourceProvider {
 	 * 
 	 * @param theFamilyName
 	 *    This operation takes one parameter which is the search criteria. It is
-	 *    annotated with the "@Required" annotation. This annotation takes one argument,
+	 *    annotated with the "@Autowired" annotation. This annotation takes one argument,
 	 *    a string containing the name of the search criteria. The datatype here
 	 *    is StringDt, but there are other possible parameter types depending on the
 	 *    specific search criteria.

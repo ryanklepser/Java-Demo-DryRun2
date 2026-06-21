@@ -52,7 +52,7 @@ public class BaseJpaResourceProviderCompositionR5 extends JpaResourceProviderR5<
 	@Operation(name = JpaConstants.OPERATION_DOCUMENT, idempotent = true, bundleType=BundleTypeEnum.DOCUMENT)
 	public IBundleProvider getDocumentForComposition(
 
-			javax.servlet.http.HttpServletRequest theServletRequest,
+			jakarta.servlet.http.HttpServletRequest theServletRequest,
 
 			@IdParam
 			IdType theId,

@@ -23,7 +23,7 @@ package ca.uhn.fhir.jpa.search.builder;
 import ca.uhn.fhir.rest.api.server.storage.ResourcePersistentId;
 import org.apache.commons.lang3.Validate;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.Iterator;
 import java.util.List;
 

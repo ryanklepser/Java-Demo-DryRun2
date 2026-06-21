@@ -31,7 +31,7 @@ import ca.uhn.fhir.rest.server.exceptions.NotImplementedOperationException;
 import org.hl7.fhir.instance.model.api.IIdType;
 import org.hl7.fhir.instance.model.api.IPrimitiveType;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 public class FhirResourceDaoCompositionDstu2 extends BaseHapiFhirResourceDao<Composition>implements IFhirResourceDaoComposition<Composition> {
 

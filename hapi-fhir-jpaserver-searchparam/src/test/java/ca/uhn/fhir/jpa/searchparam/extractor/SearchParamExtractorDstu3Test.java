@@ -34,7 +34,7 @@ import org.hl7.fhir.dstu3.model.Questionnaire;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.List;

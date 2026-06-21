@@ -3,7 +3,7 @@ package ca.uhn.fhir.jpa.util;
 import org.hl7.fhir.r4.model.Extension;
 import org.hl7.fhir.r4.model.ValueSet;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.List;
 import java.util.stream.Collectors;
 

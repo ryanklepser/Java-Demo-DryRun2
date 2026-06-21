@@ -30,8 +30,8 @@ import ca.uhn.fhir.rest.api.server.RequestDetails;
 import ca.uhn.fhir.rest.param.DateRangeParam;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 
-import javax.annotation.Nonnull;
-import javax.persistence.EntityManager;
+import jakarta.annotation.Nonnull;
+import jakarta.persistence.EntityManager;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;

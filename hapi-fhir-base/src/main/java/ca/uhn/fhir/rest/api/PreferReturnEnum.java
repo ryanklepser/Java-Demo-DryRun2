@@ -20,7 +20,7 @@ package ca.uhn.fhir.rest.api;
  * #L%
  */
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 import java.util.HashMap;
 
 /**

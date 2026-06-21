@@ -24,7 +24,7 @@ import ca.uhn.fhir.mdm.api.MdmConstants;
 import org.hl7.fhir.instance.model.api.IBaseCoding;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.Optional;
 
 public final class MdmResourceUtil {

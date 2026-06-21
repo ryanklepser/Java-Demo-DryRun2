@@ -20,7 +20,7 @@ package ca.uhn.fhir.jpa.searchparam.nickname;
  * #L%
  */
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.Reader;

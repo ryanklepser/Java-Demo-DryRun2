@@ -48,8 +48,8 @@ public class BaseJpaResourceProviderObservationR5 extends JpaResourceProviderR5<
 	@Operation(name = JpaConstants.OPERATION_LASTN, idempotent = true, bundleType = BundleTypeEnum.SEARCHSET)
 	public IBundleProvider observationLastN(
 
-		javax.servlet.http.HttpServletRequest theServletRequest,
-		javax.servlet.http.HttpServletResponse theServletResponse,
+		jakarta.servlet.http.HttpServletRequest theServletRequest,
+		jakarta.servlet.http.HttpServletResponse theServletResponse,
 
 		ca.uhn.fhir.rest.api.server.RequestDetails theRequestDetails,
 

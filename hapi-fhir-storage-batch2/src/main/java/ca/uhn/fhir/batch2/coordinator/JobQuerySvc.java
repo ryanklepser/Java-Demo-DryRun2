@@ -32,7 +32,7 @@ import ca.uhn.fhir.util.JsonUtil;
 import ca.uhn.fhir.util.UrlUtil;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.lang.reflect.Field;
 import java.util.List;
 import java.util.stream.Collectors;

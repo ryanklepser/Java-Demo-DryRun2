@@ -27,12 +27,12 @@ import org.hl7.fhir.instance.model.api.IIdType;
 import org.simplejavamail.api.email.Email;
 import org.simplejavamail.email.EmailBuilder;
 import org.thymeleaf.context.Context;
-import org.thymeleaf.spring5.SpringTemplateEngine;
-import org.thymeleaf.spring5.dialect.SpringStandardDialect;
+import org.thymeleaf.spring6.SpringTemplateEngine;
+import org.thymeleaf.spring6.dialect.SpringStandardDialect;
 import org.thymeleaf.templatemode.TemplateMode;
 import org.thymeleaf.templateresolver.StringTemplateResolver;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.List;
 import java.util.stream.Collectors;
 

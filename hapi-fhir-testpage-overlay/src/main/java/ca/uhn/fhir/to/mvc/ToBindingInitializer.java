@@ -11,9 +11,6 @@ public class ToBindingInitializer implements WebBindingInitializer {
 		theBinder.setFieldMarkerPrefix("__");
 	}
 
-	@Override
-	public void initBinder(WebDataBinder theBinder, WebRequest theRequest) {
-		// nothing
-	}
+
 
 }

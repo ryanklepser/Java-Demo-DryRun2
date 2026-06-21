@@ -12,7 +12,7 @@ import org.hamcrest.Matchers;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.sql.SQLException;
 import java.util.Properties;
 import java.util.Set;

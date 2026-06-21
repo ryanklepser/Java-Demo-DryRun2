@@ -22,7 +22,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.servlet.ServletException;
+import jakarta.servlet.ServletException;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.ArrayList;

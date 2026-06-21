@@ -42,7 +42,7 @@ import org.hl7.fhir.r5.model.DomainResource;
 import org.hl7.fhir.r5.model.IdType;
 import org.hl7.fhir.r5.model.Resource;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;

@@ -59,7 +59,7 @@ public class BaseJpaResourceProviderCompositionR4 extends JpaResourceProviderR4<
 //	public IBaseBundle getDocumentForComposition(
 	public IBundleProvider getDocumentForComposition(
 
-			javax.servlet.http.HttpServletRequest theServletRequest,
+			jakarta.servlet.http.HttpServletRequest theServletRequest,
 
 			@IdParam
 			IdType theId,

@@ -31,8 +31,8 @@ import org.hl7.fhir.dstu2.model.StringType;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.junit.jupiter.api.Test;
 
-import javax.servlet.ServletConfig;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.http.HttpServletRequest;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
@@ -478,7 +478,7 @@ public class ServerConformanceProviderHl7OrgDstu2Test {
 		@Operation(name = "plain", idempotent = true, returnParameters= {
 			@OperationParam(min=1, max=2, name="out1", type=StringType.class)
 		})
-		public IBundleProvider everything(javax.servlet.http.HttpServletRequest theServletRequest, @IdParam IdType theId, @OperationParam(name = "start") DateType theStart, @OperationParam(name = "end") DateType theEnd) {
+		public IBundleProvider everything(jakarta.servlet.http.HttpServletRequest theServletRequest, @IdParam IdType theId, @OperationParam(name = "start") DateType theStart, @OperationParam(name = "end") DateType theEnd) {
 			return null;
 		}
 
@@ -487,7 +487,7 @@ public class ServerConformanceProviderHl7OrgDstu2Test {
 	public static class ProviderWithExtendedOperationReturningBundle implements IResourceProvider {
 
 		@Operation(name = "everything", idempotent = true)
-		public IBundleProvider everything(javax.servlet.http.HttpServletRequest theServletRequest, @IdParam IdType theId, @OperationParam(name = "start") DateType theStart, @OperationParam(name = "end") DateType theEnd) {
+		public IBundleProvider everything(jakarta.servlet.http.HttpServletRequest theServletRequest, @IdParam IdType theId, @OperationParam(name = "start") DateType theStart, @OperationParam(name = "end") DateType theEnd) {
 			return null;
 		}
 

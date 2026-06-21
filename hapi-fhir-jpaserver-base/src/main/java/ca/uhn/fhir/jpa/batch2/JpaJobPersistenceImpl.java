@@ -33,8 +33,8 @@ import org.apache.commons.lang3.Validate;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 
-import javax.annotation.Nonnull;
-import javax.transaction.Transactional;
+import jakarta.annotation.Nonnull;
+import jakarta.transaction.Transactional;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;

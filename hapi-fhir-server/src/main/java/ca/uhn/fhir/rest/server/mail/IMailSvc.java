@@ -23,7 +23,7 @@ package ca.uhn.fhir.rest.server.mail;
 import org.simplejavamail.api.email.Email;
 import org.simplejavamail.api.mailer.AsyncResponse;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.List;
 
 public interface IMailSvc {

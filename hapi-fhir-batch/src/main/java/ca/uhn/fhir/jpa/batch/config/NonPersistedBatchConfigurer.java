@@ -20,20 +20,26 @@ package ca.uhn.fhir.jpa.batch.config;
  * #L%
  */
 
-import org.springframework.batch.core.configuration.annotation.DefaultBatchConfigurer;
 import org.springframework.batch.core.explore.JobExplorer;
-import org.springframework.batch.core.explore.support.MapJobExplorerFactoryBean;
+import org.springframework.batch.core.explore.support.JobExplorerFactoryBean;
 import org.springframework.batch.core.launch.JobLauncher;
-import org.springframework.batch.core.launch.support.SimpleJobLauncher;
+import org.springframework.batch.core.launch.support.TaskExecutorJobLauncher;
 import org.springframework.batch.core.repository.JobRepository;
-import org.springframework.batch.core.repository.support.MapJobRepositoryFactoryBean;
+import org.springframework.batch.core.repository.support.JobRepositoryFactoryBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.core.task.TaskExecutor;
+import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
+import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 import org.springframework.transaction.PlatformTransactionManager;
 
+import javax.sql.DataSource;
 
-public class NonPersistedBatchConfigurer extends DefaultBatchConfigurer {
+
+@Configuration
+public class NonPersistedBatchConfigurer {
 	@Autowired
 	@Qualifier("hapiTransactionManager")
 	private PlatformTransactionManager myHapiPlatformTransactionManager;
@@ -42,36 +48,41 @@ public class NonPersistedBatchConfigurer extends DefaultBatchConfigurer {
 	@Qualifier(BatchConstants.JOB_LAUNCHING_TASK_EXECUTOR)
 	private TaskExecutor myTaskExecutor;
 
-	private MapJobRepositoryFactoryBean myJobRepositoryFactory;
-
-	@Override
-	public PlatformTransactionManager getTransactionManager() {
-		return myHapiPlatformTransactionManager;
+	@Bean
+	public DataSource batchDataSource() {
+		return new EmbeddedDatabaseBuilder()
+			.setType(EmbeddedDatabaseType.H2)
+			.addScript("/org/springframework/batch/core/schema-h2.sql")
+			.build();
 	}
 
-
-	@Override
-	protected JobRepository createJobRepository() throws Exception {
-		MapJobRepositoryFactoryBean factory = new MapJobRepositoryFactoryBean();
-		factory.setTransactionManager(this.getTransactionManager());
+	@Bean
+	public JobRepository jobRepository() throws Exception {
+		JobRepositoryFactoryBean factory = new JobRepositoryFactoryBean();
+		factory.setDataSource(batchDataSource());
+		factory.setTransactionManager(myHapiPlatformTransactionManager);
 		factory.afterPropertiesSet();
-		myJobRepositoryFactory = factory;
 		return factory.getObject();
 	}
 
-	@Override
-	public JobExplorer createJobExplorer() throws Exception {
-		MapJobExplorerFactoryBean jobExplorerFactoryBean = new MapJobExplorerFactoryBean(myJobRepositoryFactory);
-		jobExplorerFactoryBean.afterPropertiesSet();
-		return jobExplorerFactoryBean.getObject();
+	@Bean
+	public JobExplorer jobExplorer() throws Exception {
+		JobExplorerFactoryBean factory = new JobExplorerFactoryBean();
+		factory.setDataSource(batchDataSource());
+		factory.afterPropertiesSet();
+		return factory.getObject();
 	}
 
-	@Override
-	protected JobLauncher createJobLauncher() throws Exception {
-		SimpleJobLauncher launcher = new SimpleJobLauncher();
+	@Bean
+	public JobLauncher jobLauncher(JobRepository jobRepository) throws Exception {
+		TaskExecutorJobLauncher launcher = new TaskExecutorJobLauncher();
 		launcher.setTaskExecutor(myTaskExecutor);
-		launcher.setJobRepository(getJobRepository());
+		launcher.setJobRepository(jobRepository);
 		launcher.afterPropertiesSet();
 		return launcher;
+	}
+
+	public PlatformTransactionManager getTransactionManager() {
+		return myHapiPlatformTransactionManager;
 	}
 }

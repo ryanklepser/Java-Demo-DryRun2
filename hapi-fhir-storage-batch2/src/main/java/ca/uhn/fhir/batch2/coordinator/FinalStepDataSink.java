@@ -29,7 +29,7 @@ import ca.uhn.fhir.model.api.IModelJson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 class FinalStepDataSink<PT extends IModelJson, IT extends IModelJson> extends BaseDataSink<PT,IT,VoidModel> {
 	private static final Logger ourLog = LoggerFactory.getLogger(FinalStepDataSink.class);

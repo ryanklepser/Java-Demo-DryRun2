@@ -8,9 +8,9 @@ import static org.mockito.Mockito.*;
 import java.net.URI;
 import java.util.HashMap;
 
-import javax.interceptor.InvocationContext;
-import javax.servlet.ServletException;
-import javax.ws.rs.core.*;
+import jakarta.interceptor.InvocationContext;
+import jakarta.servlet.ServletException;
+import jakarta.ws.rs.core.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -89,7 +89,7 @@ public class JaxRsExceptionInterceptorTest {
 		when(context.proceed()).thenThrow(new ServletException());		
 		
 		JaxRsResponseException thrownException = new JaxRsResponseException(new NotImplementedOperationException("not implemented"));
-		doThrow(new javax.servlet.ServletException("someMessage")).when(exceptionHandler).handleException(request, thrownException);
+		doThrow(new jakarta.servlet.ServletException("someMessage")).when(exceptionHandler).handleException(request, thrownException);
 		Response result = interceptor.convertExceptionIntoResponse(request, thrownException);
 		assertEquals(InternalErrorException.STATUS_CODE, result.getStatus());
 	}

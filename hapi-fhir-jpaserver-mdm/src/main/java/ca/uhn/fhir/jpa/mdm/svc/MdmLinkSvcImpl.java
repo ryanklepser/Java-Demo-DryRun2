@@ -37,8 +37,8 @@ import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Nonnull;
-import javax.transaction.Transactional;
+import jakarta.annotation.Nonnull;
+import jakarta.transaction.Transactional;
 import java.util.Optional;
 
 /**

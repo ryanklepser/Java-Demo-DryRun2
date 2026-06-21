@@ -24,7 +24,7 @@ import ca.uhn.fhir.rest.api.RestOperationTypeEnum;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.hl7.fhir.instance.model.api.IIdType;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 
 public class ReadPartitionIdRequestDetails {
 

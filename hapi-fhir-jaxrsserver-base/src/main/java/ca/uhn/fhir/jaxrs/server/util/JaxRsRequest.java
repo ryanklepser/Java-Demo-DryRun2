@@ -35,8 +35,8 @@ import ca.uhn.fhir.rest.server.method.ResourceParameter;
 import ca.uhn.fhir.util.UrlUtil;
 import org.apache.commons.lang3.StringUtils;
 
-import javax.ws.rs.core.HttpHeaders;
-import javax.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.HttpHeaders;
+import jakarta.ws.rs.core.MediaType;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Reader;

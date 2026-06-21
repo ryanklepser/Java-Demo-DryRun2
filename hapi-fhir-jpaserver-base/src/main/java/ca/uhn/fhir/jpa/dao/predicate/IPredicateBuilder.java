@@ -24,8 +24,8 @@ import ca.uhn.fhir.context.RuntimeSearchParam;
 import ca.uhn.fhir.interceptor.model.RequestPartitionId;
 import ca.uhn.fhir.model.api.IQueryParameterType;
 
-import javax.annotation.Nullable;
-import javax.persistence.criteria.Predicate;
+import jakarta.annotation.Nullable;
+import jakarta.persistence.criteria.Predicate;
 import java.util.List;
 
 public interface IPredicateBuilder {

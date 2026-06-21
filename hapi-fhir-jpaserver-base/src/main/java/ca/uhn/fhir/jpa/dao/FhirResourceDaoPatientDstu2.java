@@ -40,7 +40,7 @@ import org.hl7.fhir.instance.model.api.IIdType;
 import org.hl7.fhir.instance.model.api.IPrimitiveType;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 import java.util.Collections;
 
 public class FhirResourceDaoPatientDstu2 extends BaseHapiFhirResourceDao<Patient>implements IFhirResourceDaoPatient<Patient> {

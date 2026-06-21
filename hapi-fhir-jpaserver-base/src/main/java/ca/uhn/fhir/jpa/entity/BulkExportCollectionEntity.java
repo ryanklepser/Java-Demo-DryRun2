@@ -22,7 +22,7 @@ package ca.uhn.fhir.jpa.entity;
 
 import ca.uhn.fhir.jpa.model.entity.ResourceTable;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;

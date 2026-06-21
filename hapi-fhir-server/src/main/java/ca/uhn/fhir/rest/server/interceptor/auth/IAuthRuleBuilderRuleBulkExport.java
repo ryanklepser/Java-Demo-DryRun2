@@ -22,7 +22,7 @@ package ca.uhn.fhir.rest.server.interceptor.auth;
 
 import org.hl7.fhir.instance.model.api.IIdType;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 /**
  * @since 5.5.0

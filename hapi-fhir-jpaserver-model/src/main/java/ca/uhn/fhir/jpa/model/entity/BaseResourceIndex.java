@@ -22,7 +22,7 @@ package ca.uhn.fhir.jpa.model.entity;
 
 import org.apache.commons.lang3.ObjectUtils;
 
-import javax.persistence.MappedSuperclass;
+import jakarta.persistence.MappedSuperclass;
 import java.io.Serializable;
 
 @MappedSuperclass

@@ -27,8 +27,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
 
 import ca.uhn.fhir.rest.client.impl.BaseHttpResponse;
 import ca.uhn.fhir.rest.server.exceptions.InternalErrorException;

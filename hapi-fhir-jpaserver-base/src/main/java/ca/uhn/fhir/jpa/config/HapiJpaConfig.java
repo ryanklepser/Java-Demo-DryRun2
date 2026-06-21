@@ -35,7 +35,7 @@ import ca.uhn.fhir.jpa.util.ResourceCountCache;
 import ca.uhn.fhir.jpa.validation.JpaValidationSupportChain;
 import ca.uhn.fhir.rest.api.IResourceSupportedSvc;
 import org.hl7.fhir.common.hapi.validation.support.CachingValidationSupport;
-import org.springframework.batch.core.configuration.annotation.BatchConfigurer;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -61,7 +61,7 @@ public class HapiJpaConfig {
 	}
 
 	@Bean
-	public BatchConfigurer batchConfigurer() {
+	public NonPersistedBatchConfigurer nonPersistedBatchConfigurer() {
 		return new NonPersistedBatchConfigurer();
 	}
 

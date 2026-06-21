@@ -107,8 +107,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.batch.core.repository.dao.JobExecutionDao;
 import org.springframework.batch.core.repository.dao.JobInstanceDao;
-import org.springframework.batch.core.repository.dao.MapJobExecutionDao;
-import org.springframework.batch.core.repository.dao.MapJobInstanceDao;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.orm.jpa.JpaTransactionManager;
@@ -119,8 +118,8 @@ import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.TransactionCallbackWithoutResult;
 import org.springframework.transaction.support.TransactionTemplate;
 
-import javax.annotation.Nonnull;
-import javax.persistence.EntityManager;
+import jakarta.annotation.Nonnull;
+import jakarta.persistence.EntityManager;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -246,8 +245,6 @@ public abstract class BaseJpaTest extends BaseTest {
 	public void afterEnsureNoStaleBatchJobs() {
 		if (myMapJobInstanceDao != null) {
 			myBatchJobHelper.ensureNoRunningJobs();
-			ProxyUtil.getSingletonTarget(myMapJobExecutionDao, MapJobExecutionDao.class).clear();
-			ProxyUtil.getSingletonTarget(myMapJobInstanceDao, MapJobInstanceDao.class).clear();
 		}
 	}
 
@@ -328,7 +325,7 @@ public abstract class BaseJpaTest extends BaseTest {
 	protected void purgeHibernateSearch(EntityManager theEntityManager) {
 		runInTransaction(() -> {
 			if (myFulltestSearchSvc != null && !myFulltestSearchSvc.isDisabled()) {
-				SearchSession searchSession = Search.session(theEntityManager);
+				SearchSession searchSession = Search.session(theEntityManager.unwrap(org.hibernate.Session.class));
 				searchSession.workspace(ResourceTable.class).purge();
 				searchSession.indexingPlan().execute();
 			}

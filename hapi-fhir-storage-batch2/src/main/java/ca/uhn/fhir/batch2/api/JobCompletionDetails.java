@@ -23,7 +23,7 @@ package ca.uhn.fhir.batch2.api;
 import ca.uhn.fhir.model.api.IModelJson;
 import org.apache.commons.lang3.Validate;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 public class JobCompletionDetails<PT extends IModelJson> {
 

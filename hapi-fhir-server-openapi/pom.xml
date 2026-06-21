@@ -46,6 +46,13 @@
 			<artifactId>swagger-ui</artifactId>
 		</dependency>
 
+		<!-- Jakarta Servlet API -->
+		<dependency>
+			<groupId>jakarta.servlet</groupId>
+			<artifactId>jakarta.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
 		<!-- Thymeleaf -->
 		<dependency>
 			<groupId>org.thymeleaf</groupId>

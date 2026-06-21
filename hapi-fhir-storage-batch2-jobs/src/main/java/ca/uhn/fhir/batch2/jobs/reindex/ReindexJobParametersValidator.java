@@ -25,8 +25,8 @@ import ca.uhn.fhir.jpa.api.svc.IResourceReindexSvc;
 import ca.uhn.fhir.rest.server.provider.ProviderConstants;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 import java.util.Collections;
 import java.util.List;
 

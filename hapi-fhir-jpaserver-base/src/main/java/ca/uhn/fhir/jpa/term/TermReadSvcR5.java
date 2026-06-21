@@ -22,9 +22,9 @@ import org.hl7.fhir.r5.model.ValueSet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.PlatformTransactionManager;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-import javax.transaction.Transactional;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
+import jakarta.transaction.Transactional;
 
 /*
  * #%L

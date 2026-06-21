@@ -29,7 +29,7 @@ import ca.uhn.fhir.rest.api.server.storage.ResourcePersistentId;
 import org.hl7.fhir.instance.model.api.IBaseBundle;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;

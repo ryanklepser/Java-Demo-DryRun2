@@ -45,7 +45,7 @@ import org.springframework.web.context.support.GenericWebApplicationContext;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.servlet.DispatcherServlet;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.io.IOException;
 import java.util.Arrays;
 

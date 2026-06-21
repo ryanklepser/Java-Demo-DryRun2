@@ -7,7 +7,7 @@ import ca.uhn.fhir.rest.api.RequestFormatParamStyleEnum;
 import ca.uhn.fhir.rest.api.SummaryEnum;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 /*
  * #%L

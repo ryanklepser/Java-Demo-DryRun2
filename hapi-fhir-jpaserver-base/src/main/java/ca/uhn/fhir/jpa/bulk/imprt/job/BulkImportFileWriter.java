@@ -30,6 +30,7 @@ import ca.uhn.fhir.util.StopWatch;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.batch.item.Chunk;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -51,12 +52,12 @@ public class BulkImportFileWriter implements ItemWriter<ParsedBulkImportRecord> 
 
 	@SuppressWarnings({"SwitchStatementWithTooFewBranches", "rawtypes", "unchecked"})
 	@Override
-	public void write(List<? extends ParsedBulkImportRecord> theItemLists) throws Exception {
+	public void write(Chunk<? extends ParsedBulkImportRecord> theItemLists) throws Exception {
 		assert TransactionSynchronizationManager.isActualTransactionActive();
 
 		String offsets = "unknown";
 		if (theItemLists.size() > 0) {
-			offsets = theItemLists.get(0).getLineIndex() + " - " + theItemLists.get(theItemLists.size()-1).getLineIndex();
+			offsets = theItemLists.getItems().get(0).getLineIndex() + " - " + theItemLists.getItems().get(theItemLists.getItems().size()-1).getLineIndex();
 		}
 
 		ourLog.info("Beginning bulk import write {} rows Job[{}] FileIndex[{}] Offset[{}]", theItemLists.size(), myJobUuid, myFileIndex, offsets);

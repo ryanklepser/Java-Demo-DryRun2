@@ -23,6 +23,7 @@ package ca.uhn.fhir.jpa.term.job;
 import ca.uhn.fhir.jpa.dao.data.ITermConceptDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.batch.item.Chunk;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -40,9 +41,9 @@ public class BatchTermConceptsDeleteWriter implements ItemWriter<Long> {
 
 
 	@Override
-	public void write(List<? extends Long> theTermCodeSystemVersionPidList) throws Exception {
+	public void write(Chunk<? extends Long> theTermCodeSystemVersionPidList) throws Exception {
 		// receives input in chunks of size one
-		long codeSystemVersionId = theTermCodeSystemVersionPidList.get(0);
+		long codeSystemVersionId = theTermCodeSystemVersionPidList.getItems().get(0);
 
 		ourLog.info("Deleting concepts");
 		int deletedConcepts = myConceptDao.deleteByCodeSystemVersion(codeSystemVersionId);
